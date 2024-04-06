@@ -2,6 +2,15 @@
 
 ¡Bienvenido al repositorio del tercer semestre del grupo CodiPro!
 
+## Materias
+
+| Link | Materia |
+|-------|-------------|
+|[🔗](https://campus.frsr.utn.edu.ar/moodle/course/view.php?id=1045)|Programación III|
+|[🔗](https://campus.frsr.utn.edu.ar/moodle/course/view.php?id=1044)|Laboratorio III|
+|[🔗](https://campus.frsr.utn.edu.ar/moodle/course/view.php?id=1013)|Elementos de Investigación Operativa 2023|
+|[🔗](https://campus.frsr.utn.edu.ar/moodle/course/view.php?id=1012)|Organización Empresarial 2023|
+
 ## ¿Cómo colaboramos en el equipo CodiPro? 💻
 
 ### 1. Creando tu rama 🌱
