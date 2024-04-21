@@ -1,11 +1,9 @@
 /*
- * Java3
-Leccion1
+ * MundoPc
  */
 package ar.com.system2023.mundopc;
 
 /**
- *
  * @author Adriana
  */
 public class DispositivoEntrada {
