@@ -68,6 +68,4 @@ public class Computadora {
         return "Computadora{" + "idComputadora=" + idComputadora + ", nombre=" + nombre + ", monitor=" + monitor + ", teclado=" + teclado + ", raton=" + raton + '}';
     }
     
-    
-    
 }
