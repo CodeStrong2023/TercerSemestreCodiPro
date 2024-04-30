@@ -3,6 +3,7 @@
  */
 package test;
 
+import enumeraciones.Continentes;
 import enumeraciones.Dias;
 
 /*
@@ -10,7 +11,7 @@ import enumeraciones.Dias;
  */
 public class TestEnumeraciones {
     public static void main(String[] args) {
-        System.out.println("Dia 1: " + Dias.LUNES);
+        /*System.out.println("Dia 1: " + Dias.LUNES);
         indicarDiaSemana(Dias.LUNES); //Las enumeraciones se tratan como cadenas
         //No se debene utilizar comillas, se accede a traves del operador de punto
         System.out.println("Dia 2: " + Dias.MARTES);
@@ -29,7 +30,13 @@ public class TestEnumeraciones {
         indicarDiaSemana(Dias.SABADO);
         
         System.out.println("Dia 7: " + Dias.DOMINGO);
-        indicarDiaSemana(Dias.DOMINGO);
+        indicarDiaSemana(Dias.DOMINGO);*/
+        
+        System.out.println("Continente n° 4: " + Continentes.AMERICA);
+        System.out.println("N° de paises en el 4to continente: "
+            + Continentes.AMERICA.getPaises());
+          System.out.println("N° de gabitantes en el 4to continente: "
+            + Continentes.AMERICA.getHabitantes());
     }
     
     private static void indicarDiaSemana(Dias dias){
