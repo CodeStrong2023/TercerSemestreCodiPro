@@ -13,5 +13,5 @@ public enum Dias {  //reemplazo class por enum
     JUEVES,
     VIERNES,
     SABADO,
-    DOMINGO,
+    DOMINGO;
 }
