@@ -4,44 +4,27 @@
         <meta charset="utf-8" />
         <title>Piedra, papel o tijera</title>
         <script>
-            //funcion(aleatorio) poner aca con numeros 1,2y3 para que la variable pc tenga numeros aleatorios
-            //Opoción 1
-            //function getRandompc() {
-            //return Math.floor(Math.random() * 3) + 1; // returns 1, 2, or 3
-
-            //Opcion 2
-            function getRandomtPc() {
-                const elecciones = ['piedra', 'papel', 'tijera'];
-                const randomIndex = Math.floor(Math.random() * elecciones.length);
-                return elecciones[randomIndex];
-              }
-
             //1 es piedra, 2 es papel, 3 es tijera
             let jugador = 0
-            let max = 3
-            let min = 1
-            let pc = Math.floor(Math.random()*(max-min+1)+1)
+            let pc = 2
             jugador = prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera")
-           
-            
             //alert("Elegiste " + jugador)
             if(jugador == 1) {
-                alert("Elegiste piedra")
+                alert("Elegiste 🥌")
             }else if(jugador == 2) {
-                alert("Elegiste papel")
+                alert("Elegiste 📰")
             }else if(jugador == 3) {
-                alert("Elegiste tijera")
+                alert("Elegiste ✂")
             }else {
                 alert("Elegiste PERDER")
             }
             if(pc == 1) {
-                alert("PC elige piedra")
+                alert("PC elige 🥌")
             }else if(pc == 2) {
-                alert("PC elige papel")
+                alert("PC elige 📰")
             }else if(pc == 3) {
-                alert("PC elige tijera")
+                alert("PC elige ✂")
             }
-
             //COMBATE
             if(pc == jugador){
                 alert("EMPATE")
