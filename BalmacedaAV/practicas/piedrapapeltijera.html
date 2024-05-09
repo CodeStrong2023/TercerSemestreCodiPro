@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Piedra, papel o tijera</title>
+        <script>
+            //funcion(aleatorio) poner aca con numeros 1,2y3 para que la variable pc tenga numeros aleatorios
+            //Opoción 1
+            //function getRandompc() {
+            //return Math.floor(Math.random() * 3) + 1; // returns 1, 2, or 3
+
+            //Opcion 2
+            function getPc() {
+                const elecciones = ['piedra', 'papel', 'tijera'];
+                const randomIndex = Math.floor(Math.random() * elecciones.length);
+                return elecciones[randomIndex];
+              }
+
+            //1 es piedra, 2 es papel, 3 es tijera
+            let jugador = 0
+            let max = 3
+            let min = 1
+            let pc = Math.floor(Math.random()*(max-min+1)+1)
+            jugador = prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera")
+           
+            //alert("Elegiste " + jugador)
+            if(jugador == 1) {
+                alert("Elegiste piedra")
+            }else if(jugador == 2) {
+                alert("Elegiste papel")
+            }else if(jugador == 3) {
+                alert("Elegiste tijera")
+            }else {
+                alert("Elegiste PERDER")
+            }
+            if(pc == 1) {
+                alert("PC elige piedra")
+            }else if(pc == 2) {
+                alert("PC elige papel")
+            }else if(pc == 3) {
+                alert("PC elige tijera")
+            }
+
+            //COMBATE
+            if(pc == jugador){
+                alert("EMPATE")
+            } else if(jugador == 1 && pc == 3) {
+                alert("GANASTE")
+            }else if(jugador == 2 && pc == 1) {
+                alert("GANASTE") 
+            }else if(jugador == 3 && pc == 2) {
+                alert("GANASTE")     
+            }else {
+                alert("PERDISTE")
+            }    
+        </script>
+    </head>
+    <body>
+        <h1>Piedra, papel o tijera</h1>
+    </body>
+</html>
