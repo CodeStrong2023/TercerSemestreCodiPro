@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel, Tijera</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Piedra, Papel, Tijera</h1>
+    <button id="piedra">Piedra</button>
+    <button id="papel">Papel</button>
+    <button id="tijera">Tijera</button>
+    <p id="result"></p>
+
+    <script>
+        const piedraButton = document.getElementById('piedra');
+        const papelButton = document.getElementById('papel');
+        const tijeraButton = document.getElementById('tijera');
+        const resultParagraph = document.getElementById('result');
+
+        function getPcEleccion() {
+            const eleccion = ['piedra', 'papel', 'tijera'];
+            return eleccion[Math.floor(Math.random() * eleccion.length)];
+        }
+
+        function determineGanador(usuarioEleccion, PcEleccion) {
+            if (usuarioEleccion === PcEleccion) {
+                return 'EMPATE';
+            } else if ((usuarioEleccion === 'piedra' && PcEleccion === 'tijera') ||
+                        (usuarioEleccion === 'papel' && PcEleccion === 'piedra') ||
+                        (usuarioEleccion === 'tijera' && PcEleccion === 'papel')) {
+                return 'GANASTE';
+            } else {
+                return 'PERDISTE';
+            }
+        }
+
+        piedraButton.addEventListener('click', () => {
+            const PcEleccion = getPcEleccion();
+            const result = determineGanador('piedra', PcEleccion);
+            resultParagraph.textContent = `Elegiste piedra. La Pc elige ${PcEleccion}. ${result}`;
+        });
+
+        papelButton.addEventListener('click', () => {
+            const PcEleccion = getPcEleccion();
+            const result = determineGanador('papel', PcEleccion);
+            resultParagraph.textContent = `Elegiste papel. La Pc elige ${PcEleccion}. ${result}`;
+        });
+
+        tijeraButton.addEventListener('click', () => {
+            const PcEleccion = getPcEleccion();
+            const result = determineGanador('tijera', PcEleccion);
+            resultParagraph.textContent = `Elegiste tijera. La Pc elige ${PcEleccion}. ${result}`;
+        });
+    </script>
+</body>
+</html>
