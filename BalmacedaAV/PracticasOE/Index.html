@@ -1,20 +1,35 @@
-!DOCTYPE html
+<!DOCTYPE html>
 <!--se trata de una etiqueta que no necesita cierre, es una etiqueta simple y cuya función es 
 facilitar información al servidor web que aloja la página.-->
 <html>
 <!--es una etiquetea en la que va a cerrar todo el documento de la página web construido en HTML,
 es una etiqueta par -->
-<head> ORGANIZACIÓN EMPRESARIAL
+<head>   <h1>ORGANIZACIÓN EMPRESARIAL</h1>  
     <!--es una etiqueta par que define la cabecera del documento y contiene información del mismo
 por ejemplo metadatos, scrip, estilos, ubicación de documentos de estilo, título de la página-->
+
 <style>
     body{
-        background: red;
+        background: rgba(0, 157, 255, 0.388)
     }
+
+    Header{
+        width : 1000px;
+        Height: 200xp;
+        Background: rgba(191, 255, 0, 0.466);
+        Margin: 20px;
+        Border : 5px solid rgba(243, 161, 20, 0.884);
+        Padding: 28px
+        }      
 </style>
 </head>
 
 <body> <!--es una etiqueta par y las conocemos como el cuerpo del sitio web todo lo que se escriba dentro-->
+    <div id="logo">        
+        <h1>Bienvenidos</h1>
+        <p>Logotipo</p>
+        <a href="index.htm"><img align='bottom' src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExajhlZGttdXYzdml3dGYzc2o0YnN1dGc0Y2RvbWUxa3UzcmRnZHR3ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QTfX9Ejfra3ZmNxh6B/giphy.gif"width="60"></a>
+        
     <header>
         <!--encabezado de nuestra página web-->
     </header>
@@ -35,14 +50,18 @@ por ejemplo metadatos, scrip, estilos, ubicación de documentos de estilo, títu
         <!--etiqueta para escribir títulos-->
     </article>
 
-    <h1>
-        <!--etiqueta para escribir títulos que van desde el 1 al 6 en tamaño de escala
--->
+    <h1> <!--etiqueta para escribir títulos que van desde el 1 al 6 en tamaño de escala-->      
+        Resultado de exámen
     </h1>
 
-    <p>
-        <!--etiqueta párrafo para escribir textos-->
+    <p> <!--etiqueta párrafo para escribir textos-->
+        Fabián: <meter value = "94" min ="0" max="100" high = "90"></meter>    
     </p>
+    <p>Julian: <meter value = "60" min ="0" max="100" high = "90"></meter> </p>
+    <p>Sara: <meter value = "85" min ="0" max="100" high = "90"></meter> </p>
+    <p>José: <meter value = "45" min ="0" max="100" high = "90"></meter> </p>
+    <p>Emma: <meter value = "45" min ="0" max="100" high = "90"></meter> </p>
+    <p>Aldo: <meter value = "45" min ="0" max="100" high = "90"></meter> </p>
 
     <a>
         <!--etiqueta que me sirve para vincular pag-->
@@ -54,12 +73,18 @@ por ejemplo metadatos, scrip, estilos, ubicación de documentos de estilo, títu
 
     <style> 
         body{
-            background: red;
+            background: rgba(0, 157, 255, 0.388);
         }
+        #caja {
+            Width: 200px;
+            Height:200px;
+            Background: rgb(217, 255, 0);
+            }
+            
     </style> <!--es donde agregaremos toda la sintaxis de CSS-->
 
     <figure> <!--es una etiqueta que ayuda a estructurar en la maquetación las imágenes-->
-        <img scr="img/imagen.jpg">
+        <img align='bottom' src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExajhlZGttdXYzdml3dGYzc2o0YnN1dGc0Y2RvbWUxa3UzcmRnZHR3ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QTfX9Ejfra3ZmNxh6B/giphy.gif"width="120">
     </figure>
 
     <ol>  <!--para agregar listas numéricas -->
@@ -90,6 +115,18 @@ por ejemplo metadatos, scrip, estilos, ubicación de documentos de estilo, títu
    
 </body>
 
-<footer>pie de página</footer>
+<footer> 
+    <div class="footer-content">
+        <p>Pié de página</p>
+      <p>© 2024 Mi sitio web. Todos los derechos reservados.</p>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre mi</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
 </html>
