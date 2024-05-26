@@ -1,4 +1,5 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>30</x><y>30</y><w>740</w><h>700</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>0</y><w>150</w><h>30</h></coordinates><panel_attributes>mundo_pc</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>50</y><w>280</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Computadora&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>10</x><y>55</y><w>770</w><h>650</h></coordinates><panel_attributes>bg=#999999</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>25</y><w>160</w><h>30</h></coordinates><panel_attributes>mundo_pc
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>75</y><w>280</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Computadora&gt;&gt;
 --
 +contador_computadoras: int &lt;&lt;static&gt;&gt;
 -idComputadora: int
@@ -12,7 +13,7 @@
 --
 Responsabilidades
 --Crear objetos de tipo Computadora
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>330</y><w>280</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Monitor&gt;&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>355</y><w>280</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Monitor&gt;&gt;
 --
 +contadorMonitores: int &lt;&lt;static&gt;&gt;
 -idMonitor: int
@@ -24,7 +25,7 @@ Responsabilidades
 --
 Responsabilidades
 --Crear objetos de tipo Monitor
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>50</y><w>310</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Orden&gt;&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>75</y><w>310</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Orden&gt;&gt;
 --
 +contadorOrdenes: int &lt;&lt;static&gt;&gt;
 -idOrden: int
@@ -35,7 +36,7 @@ Responsabilidades
 +(agregar los métodos get/set de cada atributo)
 --
 Responsabilidades
---Almacenar en una lista de objetos tipo computadora</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>260</y><w>310</w><h>130</h></coordinates><panel_attributes>&lt;&lt;DispositivoEntrada&gt;
+--Almacenar en una lista de objetos tipo computadora</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>285</y><w>310</w><h>130</h></coordinates><panel_attributes>&lt;&lt;DispositivoEntrada&gt;
 --
 #tipoEntrada: String
 #marca: String
@@ -44,19 +45,33 @@ Responsabilidades
 +(agregar los métodos get/set de cada atributo)
 --
 Responsabilidades
---Crear objetos de tipo DispositivoEntrada</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>470</y><w>190</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Raton&gt;&gt;
+--Crear objetos de tipo DispositivoEntrada</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>495</y><w>190</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Raton&gt;&gt;
 --
 +contadorRatones: int &lt;&lt;static&gt;&gt;
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>470</y><w>190</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Stereotype&gt;&gt;
-Package::FatClass
-{Some Properties}
+-ideRaton: int
 --
--id: Long
-_-ClassAttribute: Long_
++__str__()
 --
-#Operation(i: int): int
-/+AbstractOperation()/
+Responsabilidades
+--crear objetos de tipo Raton
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>495</y><w>190</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Teclado&gt;&gt;
 --
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element></diagram>
++contadorTeclado: int &lt;&lt;static&gt;&gt;
+-idTeclado: int
+--
++__str__()
+--
+Responsabilidades
+--crear objetos de tipo Teclado</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>145</y><w>140</w><h>40</h></coordinates><panel_attributes>lt=.&gt;&gt;&gt;&gt;
+&lt;&lt;agregar&gt;&gt;</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>305</y><w>210</w><h>40</h></coordinates><panel_attributes>lt=-
+&lt;&lt;agregar &gt;&gt;</panel_attributes><additional_attributes>10;20;190;20</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>315</y><w>30</w><h>370</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;10;350</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>255</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>605</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>645</y><w>350</w><h>40</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;20;330;20</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>605</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>435</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>435</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>425</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>405</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element></diagram>
