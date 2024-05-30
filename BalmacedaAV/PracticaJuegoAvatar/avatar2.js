@@ -17,14 +17,14 @@ function atacar(ataque) {
   let mensaje = '';
   if (ataque === enemigoAtaque) {
     mensaje = `EMPATE! Ambos personajes atacaron con ${ataque.toUpperCase()}`;
-  } else if (ataque === 'fuego🔥' && enemigoAtaque === 'tierra🌱') {
-    mensaje = `GANASTE! Tu personaje atacó con FUEGO🔥 y el enemigo atacó con TIERRA🌱`;
+  } else if (ataque === 'fuego' && enemigoAtaque === 'tierra') {
+    mensaje = `GANASTE! Tu personaje atacó con FUEGO y el enemigo atacó con TIERRA`;
     vidasEnemigo--;
-  } else if (ataque === 'agua💧' && enemigoAtaque === 'fuego🔥') {
-    mensaje = `GANASTE! Tu personaje atacó con AGUA💧 y el enemigo atacó con FUEGO🔥`;
+  } else if (ataque === 'agua' && enemigoAtaque === 'fuego') {
+    mensaje = `GANASTE! Tu personaje atacó con AGUA y el enemigo atacó con FUEGO`;
     vidasEnemigo--;
-  } else if (ataque === 'tierra🌱' && enemigoAtaque === 'aire🌪️') {
-    mensaje = `GANASTE! Tu personaje atacó con TIERRA🌱 y el enemigo atacó con AIRE🌪️`;
+  } else if (ataque === 'tierra' && enemigoAtaque === 'aire') {
+    mensaje = `GANASTE! Tu personaje atacó con TIERRA y el enemigo atacó con AIRE`;
     vidasEnemigo--;
   } else {
     mensaje = `PERDISTE! Tu personaje atacó con ${ataque.toUpperCase()} y el enemigo atacó con ${enemigoAtaque.toUpperCase()}`;
