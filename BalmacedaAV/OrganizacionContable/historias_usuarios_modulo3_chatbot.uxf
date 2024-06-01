@@ -1,0 +1,29 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>90</x><y>20</y><w>340</w><h>40</h></coordinates><panel_attributes>Recomendaciones personalizadas</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>70</y><w>340</w><h>40</h></coordinates><panel_attributes>Como
+--
+-Usuario
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>120</y><w>340</w><h>90</h></coordinates><panel_attributes>Quiero
+--
+-quiero que el chatbot me proporcione recomendaciones 
+personalizadas basadas en mis preferencias y 
+comportamientos
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>220</y><w>340</w><h>60</h></coordinates><panel_attributes>Para
+--
+-que pueda descubrir nuevos productos o servicios 
+que se ajusten a mis necesidades
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>290</y><w>340</w><h>230</h></coordinates><panel_attributes>Criterios 
+aceptación
+--
+-El chatbot debe poder acceder a la información del 
+usuario (historial de compras o preferencias)
+El chatbot debe poder analizar la información del usuario
+ y proporcionar recomendaciones interesantes.
+Las recomendaciones deben ser personalizadas e
+interesantes para el usuario.
+Ejemplo de diálogo:
+
+Usuario: Busco productos para mascotas. 
+Chatbot: ¡Genial! Basándome en tus preferencias, te 
+recomiendo nuestros nuevos producto de alimentos con
+ingredientes ecológicos. ¿Quieres saber más sobre ellos?
+
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>

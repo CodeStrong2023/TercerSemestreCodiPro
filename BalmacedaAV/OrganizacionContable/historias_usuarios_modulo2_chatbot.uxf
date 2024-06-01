@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>90</x><y>20</y><w>340</w><h>40</h></coordinates><panel_attributes>Respuesta a preguntas frecuentes</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>70</y><w>340</w><h>40</h></coordinates><panel_attributes>Como
+--
+-Usuario
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>120</y><w>340</w><h>90</h></coordinates><panel_attributes>Quiero
+--
+-quiero que el chatbot pueda responder a mis preguntas
+ frecuentes de manera rápida y precisa
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>220</y><w>340</w><h>60</h></coordinates><panel_attributes>Para
+--
+-para que no tenga que buscar la información en otro lugar
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>290</y><w>340</w><h>220</h></coordinates><panel_attributes>Criterios 
+aceptación
+--
+-El chatbot debe tener una base de conocimientos 
+actualizada con respuestas a preguntas frecuentes.
+El chatbot debe poder responder a preguntas como: 
+¿Cuál es el horario de atención al cliente?
+¿Cómo puedo realizar un pedido en línea?
+La respuesta debe ser clara y concisa.
+Ejemplo de diálogo:
+
+Usuario: ¿Cuál es el horario de atención al cliente? 
+Chatbot: Nuestro horario de atención al cliente es de lunes
+a viernes de 9am a 5pm. ¿Necesitas algo más?
+
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>
