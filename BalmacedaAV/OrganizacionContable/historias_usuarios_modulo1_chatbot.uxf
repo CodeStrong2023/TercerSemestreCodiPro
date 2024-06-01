@@ -1,0 +1,27 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>90</x><y>20</y><w>340</w><h>40</h></coordinates><panel_attributes>Bienvenida personalizado</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>70</y><w>340</w><h>40</h></coordinates><panel_attributes>Como
+--
+-Usuario
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>120</y><w>340</w><h>90</h></coordinates><panel_attributes>Quiero
+--
+-que el chatbot me dé una bienvenida personalizada 
+cuando inicio una conversación
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>220</y><w>340</w><h>60</h></coordinates><panel_attributes>Para
+--
+-para que me sienta cómodo y valorado
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>290</y><w>340</w><h>230</h></coordinates><panel_attributes>Criterios 
+aceptación
+--
+-El chatbot debe saludar al usuario con su nombre 
+(si está disponible).
+La bienvenida debe ser amigable y cordial.
+La bienvenida debe incluir una breve descripción 
+de lo que el chatbot puede hacer.
+Ejemplo de diálogo:
+
+Usuario: Hola 
+Chatbot: ¡Hola, Juan! Soy tu asistente virtual. 
+Estoy aquí para ayudarte 
+con cualquier pregunta o tarea que tengas. 
+¿En qué puedo ayudarte hoy?
+
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>

@@ -1,0 +1,28 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>90</x><y>20</y><w>340</w><h>40</h></coordinates><panel_attributes>Seguimiento de pedidos</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>70</y><w>340</w><h>40</h></coordinates><panel_attributes>Como
+--
+-Usuario
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>120</y><w>340</w><h>90</h></coordinates><panel_attributes>Quiero
+--
+-que el chatbot pueda proporcionarme información 
+actualizada sobre el estado de mi pedido
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>220</y><w>340</w><h>60</h></coordinates><panel_attributes>Para
+--
+-que pueda planificar y estar informado sobre la entrega 
+de mis productos
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>290</y><w>340</w><h>230</h></coordinates><panel_attributes>Criterios 
+aceptación
+--
+-El chatbot debe poder acceder a la información del pedido
+ del usuario.
+El chatbot debe poder proporcionar información 
+actualizada sobre el estado del pedido
+ ("en preparación", "enviado", etc.)
+La información debe ser clara y concisa.
+Ejemplo de diálogo:
+
+Usuario: ¿Cuándo llega mi pedido? 
+Chatbot: ¡Hola! Tu pedido está en camino. 
+Se envió ayer y se espera que llegue mañana. 
+¿Necesitas algo más?
+
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>
