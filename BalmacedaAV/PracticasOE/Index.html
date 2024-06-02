@@ -7,6 +7,7 @@ es una etiqueta par -->
 <head>   <h1>ORGANIZACIÓN EMPRESARIAL</h1>  
     <!--es una etiqueta par que define la cabecera del documento y contiene información del mismo
 por ejemplo metadatos, scrip, estilos, ubicación de documentos de estilo, título de la página-->
+</head>
 
 <style>
     body{
@@ -20,30 +21,53 @@ por ejemplo metadatos, scrip, estilos, ubicación de documentos de estilo, títu
         Margin: 20px;
         Border : 5px solid rgba(243, 161, 20, 0.884);
         Padding: 28px
-        }      
+        }
+    #Logo{
+        width: 800px;
+        height: 68px;
+        background: green;
+        border: 5px solid white;
+    }
+    
 </style>
-</head>
 
 <body> <!--es una etiqueta par y las conocemos como el cuerpo del sitio web todo lo que se escriba dentro-->
+    <header>
     <div id="logo">        
         <h1>Bienvenidos</h1>
         <p>Logotipo</p>
         <a href="index.htm"><img align='bottom' src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExajhlZGttdXYzdml3dGYzc2o0YnN1dGc0Y2RvbWUxa3UzcmRnZHR3ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QTfX9Ejfra3ZmNxh6B/giphy.gif"width="60"></a>
         
-    <header>
+    
         <!--encabezado de nuestra página web-->
     </header>
 
     <nav>
         <!--etiqueta para generar la barra de navegación-->
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre mi</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
     </nav>
 
     <section>
         <!--etiqueta que hace referencia a la sección del sitio-->
+        <div id="c1" class="grupo"></div>
+        <div id="c2" class="grupo"></div>
+        <div id="c3" class="grupo"></div> 
+        <div>
+            <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/3-cute-cat-sampad-art.jpg"
+        </div> 
+        <div>
+            <h1>cat</h1>
+            <p>cute cat</p>
+        </div>  
     </section>
 
     <aside>
         <!--etiqueta que sirve para identificar columnas-->
+
     </aside>
 
     <article>
@@ -72,6 +96,7 @@ por ejemplo metadatos, scrip, estilos, ubicación de documentos de estilo, títu
     </b>
 
     <style> 
+        
         body{
             background: rgba(0, 157, 255, 0.388);
         }
@@ -80,6 +105,17 @@ por ejemplo metadatos, scrip, estilos, ubicación de documentos de estilo, títu
             Height:200px;
             Background: rgb(217, 255, 0);
             }
+        Grupo{
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+        #c1{background: magenta;
+        }
+        #c2{background: #E2A9F3;
+        }
+        #c3{background: greenyellow;
+        }
             
     </style> <!--es donde agregaremos toda la sintaxis de CSS-->
 
@@ -94,7 +130,10 @@ por ejemplo metadatos, scrip, estilos, ubicación de documentos de estilo, títu
     </ol>
 
     <ul> <!--para agregar listas no numéricas-->
-
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Artículos</a></li>
+        <li><a href="#">Contacto</a></li>
     </ul>
 
     <table border ="1">
@@ -112,8 +151,18 @@ por ejemplo metadatos, scrip, estilos, ubicación de documentos de estilo, títu
         <th>$200</th>
         </tr>
     </table>
-   
+
+    <center>
+        <h3>Formulario</h3>
+        <form>
+            <label for="text">Ingresar Nombre</label>
+            <input id="text" type="text" placeholder="Ingresar Nombre" value="">
+          </form>
+
+    </center>
+
 </body>
+
 
 <footer> 
     <div class="footer-content">
