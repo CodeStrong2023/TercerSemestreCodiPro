@@ -3,6 +3,8 @@
  */
 package test;
 
+import domain.*;
+
 /*
  * @author Adriana
  */
