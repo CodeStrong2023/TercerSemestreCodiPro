@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head> ORGANIZACIÓN EMPRESARIAL
+    <meta charset="utf-8">
+    <meta name="author" content="Equipo Codipro">
+    <meta name="description" content="descripcion sitio web">
+    <meta name="keywords" content=" tutoriales,html,desarrollo web">
+    <title>Estructura de la cabecera</title>
+    <link rel="icon" href="img/Icono.jpg">
+
+   
+ 
+<style>
+
+    header{
+        position: relative;
+        margin: 20px auto;
+        width: 1000px;
+        height:200px;
+        background:rgb(227, 213, 187);
+        border: 5px;
+    }
+    #logo {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 200px;
+        height: 60px;
+        background: rgb(166, 213, 232);
+        border: 5px solid olive;
+    }
+
+    nav{
+        position: relative;
+        margin: auto;
+        width: 1000px;
+        height: 48px;
+        background: rgb(127, 104, 88);
+    }
+
+    body {
+        background:rgb(210, 188, 157);
+    }
+   
+    #top {
+        position: relative;
+        width:1000px;
+        height:192px;
+        background: olive;
+        margin: 20px auto;
+    }
+
+    .grupo {
+        position: relative;
+        margin: 20px auto;
+        width: 1000px;
+        height: 192px;
+        background: rgb(127, 104, 88);
+
+    }
+
+    aside#der{
+        position:absolute;
+        right:0;
+        top:0;
+        width: 200px;
+        height: 453px;
+    }
+
+    aside#der h1{
+        width: 200
+    }
+
+    Footer{
+        position: relative;
+        margin: 20px auto;
+        width: 1000px;
+        height: 70px;
+        background: olive;
+    }
+   
+</style>
+
+<body>
+
+    <header>
+      <div id="logo">LOGOTIPO</div>
+    </header>
+
+    <nav></nav>
+
+    <div id="top"></div>
+
+    <div class="grupo"></div>
+    <div class="grupo"></div>
+    <div class="grupo"></div>
+
+    <figure>
+        <img width="640" height="360" src="https://sanrafaelturismo.gov.ar/wp-content/uploads/2022/04/WhatsApp-Image-2021-07-06-at-12.07.37.jpeg">
+    </figure>
+   
+    <audio  autoplay controls loop preload ="auto"></audio>
+
+   
+    <source src="audio/Nature Nurture - Quincas Moreira.mp3"type="audio/mp3">
+
+   
+    <video> autoplay controls loop widh="500" height="200"</video>
+   
+
+    <source src="video/video.mp4"type="video/mp4">
+
+   
+    <iframe width="500"height="280" src="https://www.youtube.com/embed/PPMb_rrej5c?si=d8hftlf0lJFnMBsf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   
+
+   
+    <iframe width="640" height="360"src="https://player.vimeo.com/video/553313254?h=7ab0cb8082&color=333333&title=0&byline=0&portrait=0&badge=0"frameborder="0" allowfullscreen></iframe>
+
+
+
+ <ol>
+     <li>auto</li>
+     <li>barco</li>
+     <li>avion</li>
+ </ol>
+   
+ <ul>
+
+     <li>auto</li>
+     <li>barco</li>
+     <li>avion</li>
+   
+ </ul>
+   
+    <table>border="1"</table>
+
+
+   
+ <tr>
+     <th>mes</th>
+     <th>ahorro</th>
+ </tr>
+   
+ <tr>
+    <th>Enero</th>
+    <th>$100</th>
+   
+ </tr>
+   
+ <tr>
+     <th>Febrero</th>
+     <th>$200</th>
+ </tr>
+ <h1>Resultado de Examen</h1>
+ <p>Carlos:<meter value ="94"min="0" max="100"high="90"></meter></p>
+ <p>Ana:<meter value ="60"min="0"max="100" high="90"></meter></p>
+ <p>Andres:<meter value ="85" min="0" max= "100" high="90"></meter></p>
+ <p>Pedro:<meter value ="45"min="0" max="100"high="90"></meter></p>
+
+
+
+ <h1> Resultado de ventas</h1>
+
+ <p>Enero:<progress value ="94"min="0"max="100"></progress></p>
+ <p>Febrero:<progress value ="94"min="0"max="100"></progress></p>
+ <p>Marzo:<progress value ="85"min="0"max="100"></progress></p>
+ <p>Abril:<progress value ="45"min="0"max="100"></progress></p>
+
+ <aside>
+    <div>class = noticia 1</div>
+    <div>class = noticia 2</div>
+    <div>class = noticia 3</div>
+ </aside>
+
+ <center>
+    <h3>Formulario</h3>
+    <form>
+
+    <label for="texto"> entrada de texto</label>
+    <input id= "texto"type placeholder="entrada de texto"value="" required>
+    <br>
+    <br>
+    <label for="correo"> entrada de correo</label>
+    <input id="correo" type="email"placeholder="entrada de correo"value=""required>
+    <br>
+    <br>
+
+    <label for="pass"> entrada de contraseña</label>
+    <input id="pass"type= "password" placeholder="entrada de pass"value=""required>
+
+    <br>
+    <br>
+   
+    <input type= "number" value="10" min="0">
+
+    <br>
+    <br>
+
+    <select>
+        <option>Opcion 1</option>
+        <option>Opcion 2</option>
+        <option>Option 3</option>
+    </select>
+
+     <br>
+     <br>
+
+     <input type="radio" id="blanco"name="radio"chequed><label for="blanco">Blanco</label>
+     <input type="radio" id="negro" name="radio"><label for="negro">Negro</label>
+
+     <br>
+     <br>
+
+     <input type="submit" value="Enviar Formulario">
+
+     
+
+    </form>
+ </center>
+ 
+    <footer>derecho de autor</footer>  
+
+</body>
+</html>
