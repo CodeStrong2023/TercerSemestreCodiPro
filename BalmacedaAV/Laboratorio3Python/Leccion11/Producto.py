@@ -31,7 +31,7 @@ class Producto:
     # Sobre escribimos el metodo str
     #def __str__(self):
         #return f'Id Producto: {self._id_producto}, Nombre: {self._nombre}, Precio: {self._precio}'
-#if  __name__=='__main__':   #solo sera visible si la prueba se ejecuta desde aqui
+#if __name__=='__main__':   #solo sera visible si la prueba se ejecuta desde aqui
     #producto1 = Producto('Camiseta', 100.00)
     #print(producto1)
     #producto2 = Producto('Pantalon', 150.00)
