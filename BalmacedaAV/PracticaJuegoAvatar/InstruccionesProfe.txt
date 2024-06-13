@@ -107,7 +107,6 @@ FUNCIONES Y VARIABLES AGREGADAS
 -HTML para que los mensajes dinámicos se muestren en un párrafo con id "mensaje".
 -Variables para almacenar las vidas del jugador y del enemigo, el HTML muestra las vidas actuales.
 
-
 CONSIGNA DE LA CLASE 05/06/24
 -cambiar estrategia de ataque 
 -borrar boton aire
@@ -272,3 +271,7 @@ function aleatorio(min, max){
 }
 
 window.addEventListener('load', iniciarJuego)
+
+CONSIGNA DE LA CLASE 12/06/24
+-Agregar mensajes de ataque
+-Agregar reglas de juego

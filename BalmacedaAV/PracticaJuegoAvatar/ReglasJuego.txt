@@ -1,0 +1,28 @@
+Reglas para jugar "La Leyenda de Aang: Avatar"
+
+Regla 1: Seleccionar personaje
+
+En la sección "Elige tu Personaje", selecciona uno de los cuatro personajes disponibles: Zuko, Katara, Aang o Toph.
+Haz clic en el botón "Seleccionar" para confirmar tu elección.
+
+Regla 2: Seleccionar ataque
+
+En la sección "Elige tu ataque", selecciona uno de los tres ataques disponibles: Punio, Patada o Barrida.
+Haz clic en el botón correspondiente al ataque que deseas realizar.
+
+Regla 3: Ver resultados
+
+Después de seleccionar tu ataque, el juego generará un ataque aleatorio para el enemigo.
+Verás un mensaje que indica el resultado del combate, incluyendo si ganaste o perdiste.
+Los puntos de vida de tu personaje y del enemigo se actualizarán en la sección "Vidas".
+
+Regla 4: Continuar jugando
+
+Sigue seleccionando ataques y viendo los resultados hasta que uno de los personajes pierda todas sus vidas.
+Si pierdes, puedes reiniciar el juego haciendo clic en el botón "Reiniciar" en la sección "Reiniciar".
+
+Tips
+
+Asegúrate de seleccionar un personaje antes de intentar atacar.
+Piensa estratégicamente sobre qué ataque seleccionar, ya que cada ataque tiene ventajas y desventajas contra otros ataques.
+¡Diviértete y buena suerte!
