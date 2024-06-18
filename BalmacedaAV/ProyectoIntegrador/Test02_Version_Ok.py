@@ -1,17 +1,27 @@
 import tkinter as tk
 from tkinter import simpledialog, messagebox
 
+import os
+
 def main():
     root = tk.Tk()
     root.title("TIENDA HOLA MUNDO ANIMAL")
+    root.geometry("600x210") # Para establecer tamaño de la ventana principal
 
-    label_title = tk.Label(root, text="BIENVENIDOS AL SISTEMA DE PAGO DE LA PAGINA\n HOLA MUNDO ANIMAL\n 🐶", font=("Arial", 15, "bold"))
+    # Para centrar la ventana en la pantalla
+    screen_width = root.winfo_screenwidth()
+    screen_height = root.winfo_screenheight()
+    x = (screen_width / 2) - (600 / 2)
+    y = (screen_height / 2) - (210 / 2)
+    root.geometry(f'+{int(x)}+{int(y)}')
+
+    label_title = tk.Label(root, text="BIENVENIDOS AL SISTEMA DE PAGO DE LA PAGINA\n HOLA MUNDO ANIMAL\n 🐶", font=("Candara", 15, "bold"))
     label_title.pack(pady=10)
 
     label_text = tk.Label(root, text="Para continuar con el proceso de pago haz clic en Aceptar.")
     label_text.pack(pady=10)
 
-    button = tk.Button(root, text="ACEPTAR", command=root.destroy, bg="white", fg="blue")
+    button = tk.Button(root, text="ACEPTAR", command=root.destroy, font=("Candara", 12, "bold"),bg="#87BEF6", fg="white", width=45, height=3)
     button.pack(pady=20)
 
     root.mainloop()
@@ -57,7 +67,7 @@ def elegir_codigo_postal(matriz):
     postal = False
 
     matriz_texto = "\n".join(" ".join(map(str, fila)) for fila in matriz)
-    messagebox.showinfo("Información", "A continuación vera las opciones de entrega a domicilio que tenemos para ofrecer dentro de Mendoza")
+    messagebox.showinfo("Información", "A continuación verá las opciones de entrega a domicilio que tenemos para ofrecer dentro de Mendoza")
 
     while not postal:
         codigo_str = simpledialog.askstring("Código Postal", "Digite el código postal al que quiere recibir su pedido:\n" + matriz_texto)
@@ -97,6 +107,9 @@ def elegir_codigo_postal(matriz):
     if postal:
         while True:
             direc = simpledialog.askstring("Dirección","Digite su calle, dirección y el envío llega en las primeras 24 horas desde que usted realiza el pago")
+            if direc is None:  # Si se presiona "Cancelar"
+                mostrar_mensaje_despedida()
+                return
             if direc:  # Verificar si la dirección no está vacía
                 messagebox.showinfo("Dirección", f"Usted ingresó la siguiente dirección: {direc}")
                 break  # Salir del bucle si la dirección es válida
@@ -224,4 +237,5 @@ if __name__ == "__main__":
 # He agregado algunos messagebox.showerror para mostrar errores en caso
 # de que el usuario ingrese datos incorrectos.
 
-# He agregado control de errores y bucles while para corregir los datos no ingresados correctamente
+# He agregado control de errores y bucles while para el caso de datos no ingresados correctamente
+# o para el caso de cancelar el proceso en curso
