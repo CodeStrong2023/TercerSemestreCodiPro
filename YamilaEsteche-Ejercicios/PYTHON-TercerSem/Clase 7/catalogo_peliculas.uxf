@@ -1,0 +1,38 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram noteses</help_text><element><id>UMLPackage</id><coordinates><x>10</x><y>10</y><w>700</w><h>500</h></coordinates><panel_attributes>catalogo_peliculas
+--
+
+
+
+
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>40</x><y>60</y><w>270</w><h>200</h></coordinates><panel_attributes>dominio
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>110</y><w>210</w><h>120</h></coordinates><panel_attributes>Pelicula
+--
+-nombre: str
+--
++__str__()
+--
+Responsabilidades
+--representa un objeto película
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>400</x><y>60</y><w>270</w><h>200</h></coordinates><panel_attributes>servicio
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>90</y><w>230</w><h>160</h></coordinates><panel_attributes>CatalogoPeliculas
+--
++ruta_archivo: str &lt;&lt;static&gt;&gt;
+--
++agregar_pelicula(Pelicula) &lt;&lt;static&gt;&gt;
++listar_peliculas() &lt;&lt;static&gt;&gt;
++eliminar() &lt;&lt;static&gt;&gt;
+--
+Responsabilidades
+--realizar operaciones sobre el archivo
+ de peliculas.txt</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>330</y><w>210</w><h>140</h></coordinates><panel_attributes>&lt;&lt;test_catalogo_peliculas.py&gt;&gt;
+--
+Responsabilidades:
+--contiene un menú con 4 opciones:
+	1)Agregar película
+	2)Listar película
+	3)Eliminar archivo de películas
+	4)Salir
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>160</y><w>170</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+&lt;&lt;agrega&gt;&gt;</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element></diagram>
