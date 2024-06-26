@@ -12,7 +12,7 @@ public class Empleado {
         this.nombre = nombre;
         this.sueldo = sueldo;
     }
-    //Metodo para la sobreescritura
+    //método para sobreescritura
     public String obtenerDetalles(){
         return "Nombre: "+this.nombre+", Sueldo: "+this.sueldo;
     }

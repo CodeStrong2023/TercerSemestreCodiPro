@@ -5,12 +5,12 @@ public class Persona {
     private String email;
     private static int numeroPersonas = 0;
 
-    //Constructor vacio
+    //constructor vacio
     public Persona(){
         this.id = ++Persona.numeroPersonas;
     }
 
-    //Constructor con parametros(sobrecarga de constructores)
+    //constructor con parametros: sobrecarga de constructores
     public Persona(String nombre, String tel, String email){
         this();
         this.nombre = nombre;
@@ -60,7 +60,7 @@ public class Persona {
                 '}';
     }
     public static void main(String[] args) {
-        Persona persona1 = new Persona("Juan Perez", "26188932", "jperez@mail.com");
+        Persona persona1 = new Persona("Julian Perez", "2613333333", "jperez@mail.com");
         System.out.println(persona1);
     }
 }

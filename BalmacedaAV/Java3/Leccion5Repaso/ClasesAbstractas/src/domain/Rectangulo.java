@@ -3,13 +3,13 @@ package domain;
 
 
 public class Rectangulo extends FiguraGeometrica {
-    //Constructor
-    public Rectangulo(String tipoFigura){
+    
+    public Rectangulo(String tipoFigura){  //constructor
         super(tipoFigura);
     }
     
     @Override
-    public void dibujar(){ //Implementando el metodo
+    public void dibujar(){ //implementar el metodo
         System.out.println("Se imprime un: "+this.getClass().getSimpleName());
     }
 }

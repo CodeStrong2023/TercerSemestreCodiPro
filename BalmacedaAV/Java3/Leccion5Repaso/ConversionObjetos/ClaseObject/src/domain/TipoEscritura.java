@@ -8,11 +8,11 @@ public enum TipoEscritura {
     
     private final String descripcion;
     
-    private TipoEscritura(String descripcion){ //Constructor
+    private TipoEscritura(String descripcion){ //constructor
         this.descripcion = descripcion;
     }
     
-    //Metodo get
+    //método get
     public String getDescripcion(){
         return this.descripcion;
     }

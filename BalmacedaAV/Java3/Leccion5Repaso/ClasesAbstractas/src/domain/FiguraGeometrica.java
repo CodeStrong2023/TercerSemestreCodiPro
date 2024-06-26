@@ -11,10 +11,10 @@ public abstract class FiguraGeometrica {
     protected FiguraGeometrica(String tipoFigura){
         this.tipoFigura = tipoFigura;
     }
-    //Metodo abstracto
+    //método abstracto
     public abstract void dibujar();
     
-    //Agregamos el get y set
+    //agregar el get y set
 
     public String getTipoFigura() {
         return tipoFigura;

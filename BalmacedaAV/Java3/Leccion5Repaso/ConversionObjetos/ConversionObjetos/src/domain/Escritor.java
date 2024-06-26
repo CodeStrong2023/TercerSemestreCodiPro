@@ -9,7 +9,7 @@ public class Escritor extends Empleado{
         this.tipoEscritura = tipoEscritura;
     }
     
-    //Metodo para sobreescribir
+    //método para sobreescritura
     @Override
     public String obtenerDetalles(){
         return super.obtenerDetalles()+", Tipo Escritura: "+tipoEscritura.getDescripcion();

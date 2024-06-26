@@ -1,9 +1,10 @@
 import java.util.Scanner;
+
 public class CalculadoraUTN {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        while (true){ //Cilo infinito
-            System.out.println("***** Aplicacion Calculadora *****");
+        while (true){ //ciclo infinito
+            System.out.println("******* Aplicacion Calculadora *******");
             mostrarMenu();
             try {
                 var operacion = Integer.parseInt(entrada.nextLine());
@@ -13,20 +14,20 @@ public class CalculadoraUTN {
                 } //Fin del if
                 else if (operacion == 5) {
                     System.out.println("Hasta pronto... ");
-                    break; //Rompe el ciclo y sale
+                    break; //rompe el ciclo y sale
                 } else {
                     System.out.println("Opcion erronea: " + operacion);
                 }
-                //Imprimir salto de linea antes de repetir el menu:
+                //Imprimir un salto de linea antes de repetir el menu
                 System.out.println();
-            } catch (Exception e){ //Fin del try, comienzo del catch
+            } catch (Exception e){ //Fin del try y comienzo del catch
                 System.out.println("Ocurrio un error: "+e.getMessage());
             }
         } //Fin while
     } //Fin main
 
     private static void mostrarMenu(){
-        //Mostramos el menu
+        //mostrar el menu
         System.out.println("""
                        1. Suma
                        2. Resta
@@ -44,19 +45,19 @@ public class CalculadoraUTN {
         var operando2 = Double.parseDouble(entrada.nextLine());
         double resultado;
         switch (operacion) {
-            case 1 -> { //Suma
+            case 1 -> { //suma
                 resultado = operando1 + operando2;
                 System.out.println("Resultado de la suma: " + resultado);
             }
-            case 2 -> { //Resta
+            case 2 -> { //resta
                 resultado = operando1 - operando2;
                 System.out.println("Resultado de la resta: " + resultado);
             }
-            case 3 -> { //Mutiplicacion
+            case 3 -> { //mutiplicacion
                 resultado = operando1 * operando2;
                 System.out.println("Resultado de la multiplicacion: " + resultado);
             }
-            case 4 -> { //Division
+            case 4 -> { //division
                 resultado = operando1 / operando2;
                 System.out.println("Resultado de la division: " + resultado);
             }

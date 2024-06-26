@@ -7,7 +7,7 @@ public class Persona implements Serializable{
     private String nombre;
     private String apellido;
     
-    //Constructor vacio esto es OBLIGATORIO para ser considerado Java Beans
+    //constructor vacio es OBLIGATORIO para ser considerado Java Beans
     public Persona(){
         
     }
@@ -15,7 +15,7 @@ public class Persona implements Serializable{
         this.nombre = nombre;
         this.apellido = apellido;
     }
-    //En Java Beans los getters and setter debe ser encapsulados
+    //en Java Beans los getters and setter debe ser encapsulados
     public String getNombre() {
         return nombre;
     }
