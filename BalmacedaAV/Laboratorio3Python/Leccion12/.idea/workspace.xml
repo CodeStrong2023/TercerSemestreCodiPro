@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="892923ef-9d90-4c8b-9e10-2a1c45f7f931" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laboratorio.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorio.uxf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Leccion11/Orden.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Leccion11/Orden.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Leccion11/Producto.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Leccion11/Producto.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../disenio-clase.uxf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +40,7 @@
     "Python.test_ordenes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/AdrianaBalmaceda/2024semestre3/TercerSemestreCodiPro/BalmacedaAV/Laboratorio3Python/Leccion12",
+    "last_opened_file_path": "C:/Users/AdrianaBalmaceda/2024semestre3/TercerSemestreCodiPro/BalmacedaAV/Laboratorio3Python/Leccion13",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
