@@ -1,4 +1,4 @@
-<h1>Partículas: Un efecto de fuegos artificiales interactivo</h1>
+<h1>✨Partículas: Un efecto de fuegos artificiales interactivo</h1>
 <h2>Descripción</h2>
 <p>Partículas es un proyecto de código abierto que crea un efecto de fuegos artificiales interactivo en una página web. Utiliza la biblioteca de animación AnimeJS para crear partículas que explotan en diferentes direcciones y colores cuando se hace clic o se toca en la pantalla.</p>
 <h2>Características</h2>
