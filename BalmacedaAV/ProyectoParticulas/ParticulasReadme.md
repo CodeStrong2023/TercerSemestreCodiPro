@@ -13,10 +13,10 @@ Haga clic o toque en la pantalla para activar el efecto de fuegos artificiales.
 Las partículas explotarán en diferentes direcciones y colores en respuesta a la interacción.</p>
 <h2>Tecnologías utilizadas</h2>
 <strong>
-HTML5
-CSS3
-JavaScript (AnimeJS)
-Canvas API
+<br>HTML5
+<br>CSS3
+<br>JavaScript (AnimeJS)
+<br>Canvas API
 </strong>
 <h2>Configuración</h2>
 <p>El tamaño del canvas se ajusta automáticamente al tamaño de la pantalla.
