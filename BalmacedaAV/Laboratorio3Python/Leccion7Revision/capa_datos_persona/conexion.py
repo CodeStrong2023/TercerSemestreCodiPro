@@ -1,5 +1,5 @@
 from psycopg2 import pool
-# psycopg2 as bd . otra manera de importa el psycopg2
+# psycopg2 as bd es otra manera de importar el psycopg2
 from logger_base import log
 import sys
 

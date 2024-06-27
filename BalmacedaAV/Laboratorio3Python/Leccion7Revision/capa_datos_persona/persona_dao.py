@@ -1,6 +1,10 @@
-from capa_datos_persona.Persona import Persona
-from capa_datos_persona.conexion import Conexion
-from capa_datos_persona.cursor_del_pool import CursorDelPool
+
+import capa_datos_persona.Persona
+import capa_datos_persona.conexion
+import capa_datos_persona.cursor_del_pool
+
+from Persona import Persona
+from cursor_del_pool import CursorDelPool
 from logger_base import log
 
 class PersonaDAO:
@@ -17,13 +21,13 @@ class PersonaDAO:
     _ACTUALIZAR = 'UPDATE persona SET nombre=%s, apellido =%s, email=%s WHERE id_persona=%s'
     _ELIMINAR = 'DELETE FROM persona WHERE id_persona=%s'
 
-    #Definimos los metodos de clase
+    #Definir los métodos de clase
     @classmethod
     def seleccionar(cls):
         with CursorDelPool() as cursor:
             cursor.execute(cls._SELECCIONAR)
             registros = cursor.fetchall()
-            personas = [] #Creamos una lista
+            personas = []  # creamos una lista
             for registro in registros:
                 persona = Persona(registro[0], registro[1], registro[2], registro[3])
                 personas.append(persona)
@@ -53,23 +57,23 @@ class PersonaDAO:
             return cursor.rowcount
 
 if __name__ == '__main__':
-    # Eliminar un registro
+    # eliminar un registro
     persona1 = Persona(id_persona=18)
     personas_elimandas = PersonaDAO.eliminar(persona1)
     log.debug(f'Personas eliminadas: {personas_elimandas}')
 
-    #Actualizar un registro
+    # actualizar un registro
     persona1 = Persona(1, 'Juan', 'Pena', 'jpena@mail.com')
     personas_actualizadas = PersonaDAO.actualizar(persona1)
     log.debug(f'Personas actualizadas: {personas_actualizadas}')
 
-    # Insertar un registro
+    # insertar un registro
     persona1 = Persona(nombre='Mateo', apellido='Torres', email='tmateo@mail.com')
     personas_insertadas = PersonaDAO.insertar(persona1)
     log.debug(f'Personas insertadas: {personas_insertadas}')
 
 
-    # Seleccionar objetos
+    # seleccionar objetos
     personas = PersonaDAO.seleccionar()
     for persona in personas:
         log.debug(persona)
