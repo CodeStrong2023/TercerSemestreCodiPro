@@ -1,0 +1,33 @@
+
+***Wiki del Código del Chatbot con AI***
+**Introducción**
+Este código es un ejemplo de un chatbot con inteligencia artificial (AI) que utiliza el lenguaje de programación Python y las bibliotecas NLTK y Keras. El chatbot está diseñado para responder a entradas del usuario basadas en un conjunto de intenciones y patrones definidos en un archivo JSON.
+**Estructura del Código**
+El código se divide en varias secciones:
+Importación de bibliotecas: Se importan las bibliotecas necesarias, incluyendo NLTK para el procesamiento de lenguaje natural y Keras para la creación del modelo de red neuronal.
+Carga de intenciones: Se carga el archivo JSON que contiene las intenciones y patrones del chatbot.
+Preprocesamiento de palabras: Se tokenizan las palabras de los patrones y se eliminan las palabras irrelevantes.
+Creación del modelo de aprendizaje automático: Se crea un modelo de aprendizaje automático utilizando la biblioteca Keras.
+Entrenamiento del modelo: Se entrena el modelo con los datos de entrenamiento.
+Funciones para responder a entradas del usuario: Se definen funciones para procesar las entradas del usuario y responder según las intenciones y patrones definidos.
+Prueba del chatbot: Se prueba el chatbot con entradas del usuario.
+**Funciones y Variables**
+intents: Variable que contiene las intenciones y patrones del chatbot cargadas desde el archivo JSON.
+words: Variable que contiene la lista de palabras tokenizadas y procesadas.
+classes: Variable que contiene la lista de intenciones únicas.
+documents: Variable que contiene la lista de patrones y sus respectivas intenciones.
+lemmatizer: Variable que contiene el objeto WordNetLemmatizer para lematizar las palabras.
+ignore_words: Variable que contiene la lista de palabras irrelevantes que se eliminan durante el preprocesamiento.
+clean_up_sentence: Función que tokeniza y lematiza una entrada del usuario.
+bag_of_words: Función que crea un vector de características para una entrada del usuario.
+predict_class: Función que predice la intención de una entrada del usuario utilizando el modelo de aprendizaje automático.
+getResponse: Función que devuelve una respuesta aleatoria según la intención predicha.
+chatbot_response: Función que devuelve la respuesta del chatbot para una entrada del usuario.
+**Archivos**
+intents.json: Archivo JSON que contiene las intenciones y patrones del chatbot.
+**Notas**
+El archivo intents.json debe estar en la misma carpeta que el código Python.
+El modelo de aprendizaje automático se entrena con los datos de entrenamiento y se utiliza para predecir la intención de las entradas del usuario.
+La función getResponse devuelve una respuesta aleatoria según la intención predicha.
+El chatbot puede ser mejorado agregando más intenciones y patrones, así como mejorando el modelo de aprendizaje automático.
+
