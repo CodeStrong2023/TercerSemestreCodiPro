@@ -1,0 +1,35 @@
+
+***Chatbot con Spacy y Keras***
+Este código implementa un chatbot básico utilizando las bibliotecas Spacy y Keras. A continuación, se presentará una descripción detallada de cada sección del código.
+**Importación de bibliotecas**
+El código comienza importando las bibliotecas necesarias:
+spacy: una biblioteca de procesamiento de lenguaje natural que se utiliza para tokenizar y analizar el texto.
+json: una biblioteca para trabajar con archivos JSON.
+random: una biblioteca para generar números aleatorios.
+numpy (como np): una biblioteca para trabajar con matrices y operaciones numéricas.
+tensorflow.keras: una biblioteca para construir modelos de aprendizaje automático.
+**Carga del modelo de lenguaje**
+Se carga el modelo de lenguaje de Spacy para el idioma inglés (en_core_web_sm).
+**Carga de intenciones del chatbot**
+Se carga el archivo intents.json que contiene las intenciones del chatbot. Las intenciones son patrones de texto que el chatbot puede reconocer y responder.
+**Preprocesamiento de palabras y patrones**
+Se itera sobre las intenciones y se preprocesan las palabras y patrones utilizando Spacy. Se eliminan palabras irrelevantes y se crean listas de palabras y clases.
+**Creación del modelo de aprendizaje automático**
+Se crea un modelo de aprendizaje automático utilizando Keras. El modelo tiene tres capas: una capa de entrada con 128 neuronas, una capa oculta con 64 neuronas y una capa de salida con tantas neuronas como clases hay. Se utiliza la función de activación ReLU y la función de pérdida categorical cross-entropy.
+**Entrenamiento del modelo**
+Se entrena el modelo con los datos preprocesados utilizando el algoritmo Adam y una tasa de aprendizaje de 0.001.
+**Funciones para responder a entradas del usuario**
+Se definen tres funciones para responder a entradas del usuario:
+clean_up_sentence: limpia y tokeniza la entrada del usuario.
+bag_of_words: crea un vector de características para la entrada del usuario.
+predict_class: utiliza el modelo para predecir la clase de la entrada del usuario.
+**Función para obtener la respuesta del chatbot**
+Se define la función getResponse que utiliza la predicción de la clase para seleccionar una respuesta aleatoria del chatbot.
+**Función para interactuar con el chatbot**
+Se define la función chatbot_response que llama a predict_class y getResponse para obtener la respuesta del chatbot.
+**Prueba del chatbot**
+Finalmente, se prueba el chatbot con un bucle infinito que permite al usuario interactuar con el chatbot.
+**intents.json**
+El archivo intents.json contiene las intenciones del chatbot en formato JSON. Cada intención tiene un tag, patrones de texto y respuestas posibles.
+Este chatbot básico puede responder a saludos, despedidas y preguntas de ayuda. Puede ser ampliado y mejorado para responder a más intenciones y patrones de texto.
+
