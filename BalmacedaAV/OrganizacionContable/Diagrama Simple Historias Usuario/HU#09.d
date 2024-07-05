@@ -37,4 +37,3 @@ Iniciar
 |___ Mostrar carrito de compras a la derecha de la página
 |
 |___ Finalizar
-este uno estaria incompleto fijarse bien los comentarios
