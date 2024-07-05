@@ -1,0 +1,19 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": ["hola", "hi", "hello", "hey"],
+      "responses": ["Hola!", "Hola, ¿cómo estás?", "Hey! ¿Qué tal?"]
+    },
+    {
+      "tag": "despedida",
+      "patterns": ["adiós", "bye", "goodbye", "hasta luego"],
+      "responses": ["Adiós!", "Hasta luego!", "Chau!"]
+    },
+    {
+      "tag": "ayuda",
+      "patterns": ["ayuda", "help", "¿qué puedes hacer?"],
+      "responses": ["Puedo responder a preguntas sobre programación y tecnología.", "Soy un chatbot, puedo ayudarte con dudas sobre programación."]
+    }
+  ]
+}
