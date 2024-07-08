@@ -10,9 +10,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2iaJ0xYBGPQdTj9ZSW0xdnn5hDT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,7 +22,8 @@
   "keyToString": {
     "Python.MundoAnimalConBaseDeDatos.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "EmiliaBazan",
+    "last_opened_file_path": "D:/TUP'24/Laboratorio'24/Leccion09",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -44,6 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719722535822</updated>
       <workItem from="1719722537069" duration="259000" />
+      <workItem from="1720431561081" duration="87000" />
     </task>
     <servers />
   </component>
